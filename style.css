@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+
+*{
+    font-family: Outfit;
+    margin-bottom: 4px;
+}
+
+hr{
+    width: 99.5%; 
+    border-color: hsl(215, 32%, 27%);
+    height: 0%;
+}
+#container{
+    height: 470px;
+    width: 260px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    box-shadow: 5px 5px 50px black;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+p{
+    color: white;
+    font-weight: 100;
+}
+#name{
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#mainimg{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+}
+#renme{
+    font-weight: 400;
+    transition: 0.3s;
+}
+#avatar{
+    position: relative;
+     top: 11px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#crest{
+    font-weight: 400;
+    color:hsl(178, 100%, 50%);
+    font-size: 14px;
+}
+#crest::before{
+    content: url(/images/icon-ethereum.svg);
+    position: relative;
+     top: 3px;
+    margin: 5px;
+}
+#name:hover{
+    cursor: pointer;
+    text-decoration: hsl(178, 100%, 50%);
+    color: hsl(178, 100%, 50%);
+}
+#renme:hover{
+    transition: 0.1s;
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+#time{
+    position: absolute;
+     right: 15px;
+}
+#time::before{
+    content: url(/images/icon-clock.svg);
+    margin-right: 6px;
+    position: relative;
+     top: 3px;
+}
